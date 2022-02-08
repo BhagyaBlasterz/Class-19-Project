@@ -76,7 +76,10 @@ function draw() {
     }else{
       if(swordGroup.isTouching(boy)) {
       swordGroup.destroyEach();
-      treasureCollection=treasureCollection+1;
+      treasureCollection=0;
+      boy.velocityY=0;
+      path.velocityY = 0;
+
     }
   }
   
